@@ -25,13 +25,15 @@ Variante = que sempre pode mudar / Variável é um espaço reservado na mamória
 char: Caracter: O valor armazenado é um caractere. Caracateres geralmente são armazenados em códigos (usualmente)
 int: Número inteiro é o tipo padrão e o tamanho do conjunto que pode ser representado normalmente depende da máquina em que o programa está rodando.
 float: Número em ponto flutuante de precisão simples. São conhecidos normalmente como números reais.
-
+double: Númeroo em ponto flutuante de precisão dupla
+string = Cadeia de caracteres
+Bolean: True | False -> Verdadeiro Falso
 
 
 soma -> +
 subtração -> - 
 Multiplicação -> x
 divisão -> / ou div
-
+resto da divisão -> % ou mod
 
      
