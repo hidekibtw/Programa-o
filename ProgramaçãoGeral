@@ -1,0 +1,37 @@
+LOCARES DE DOWLOAD JAVA 17:
+- Oracle
+- OpenJDK
+- Adoptium
+
+AMBIENTE DE LÓGICA:
+JAVA SE 17
+Eclipse
+VSCode
+Intellij
+
+
+JAVA:
+- Compila (JAVA C)
+- Interpretador (JAVA)
+
+JAVASCRIPT:
+- Interpretador
+
+VM = DELTA D (Df - Di) / DELTA T (Tf - Ti)
+
+Constante = que nunca muda
+Variante = que sempre pode mudar / Variável é um espaço reservado na mamória do computador para armazenar um tipo de dado determinado.
+
+char: Caracter: O valor armazenado é um caractere. Caracateres geralmente são armazenados em códigos (usualmente)
+int: Número inteiro é o tipo padrão e o tamanho do conjunto que pode ser representado normalmente depende da máquina em que o programa está rodando.
+float: Número em ponto flutuante de precisão simples. São conhecidos normalmente como números reais.
+
+
+
+soma -> +
+subtração -> - 
+Multiplicação -> x
+divisão -> / ou div
+
+
+     
