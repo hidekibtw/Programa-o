@@ -62,3 +62,9 @@ create table contatos(
   fone varchar(15) not null,
   email varchar(50)
 );
+
+-- descrever a tabela
+describe contatos;
+
+-- selecionar tudo da tabela
+select * from contatos;
