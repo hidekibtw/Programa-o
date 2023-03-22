@@ -1,0 +1,38 @@
+SISTEMA: Conjunto de componentes interligados que gera, coleta, processa e distribui informações.
+
+BANCO DE DADOS: Bancos de dados ou bases de dados são sistemas para armazenar informações que se relacionam de forma a criar um sentido. O banco de dados é considerado o principal componente do projeto.
+
+SGDB: SGDB ou Sistema de Gerenciamento de Banco de Dados é a ferramenta usada para gerenciar o banco de dados.
+
+DADOS: Dados são conteúdos armazenados no Servidor de Banco de Dados. O banco de dados pode armazenar texto, números, imagens, bídeos etc.
+
+INFORMAÇÕES: Informações são obtidas à partir do processamento dos dados armazenados no servidor.
+
+exemplo: 
+mouse (12,50 a unidade)
+pen drive (20,00 a unidade)
+HD externo (220,00 a unidade)
+
+Processamento dos dados:
+mouse: 2 x 12,50 = 25,00
+pen drive: 2 x 20,00 = 40,00
+HD externo: 220,00
+Ttoal da compra: (25,00 + 40,00 + 220,00) = 285,00
+Troco = (300,00 - 285,00) = 15,00
+
+> OR = ( 3 OPERAÇÕES)
+< ( 1 OPERAÇÃO)
+
+TIPOS:
+Modelo Relacional:
+ER (Entidade Relacionamento)
+SQL (Linguagem de Consulta Estruturada)
+
+Modelo Não Relacional
+NOSQL (Not Only SQL) = MongoDB
+
+SERVIDOR:
+Rede Local: Sistemas para comércio de bens e serviços
+Cloud: Sistemas para WEB (E-Commerce)
+
+
