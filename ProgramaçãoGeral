@@ -29,11 +29,29 @@ double: Númeroo em ponto flutuante de precisão dupla
 string = Cadeia de caracteres
 Bolean: True | False -> Verdadeiro Falso
 
-
+OPERADORES ARITMÉTICOS:
 soma -> +
 subtração -> - 
 Multiplicação -> x
 divisão -> / ou div
 resto da divisão -> % ou mod
 
+OPERADORES DE ATRIBUIÇÃO:
+igual -> =
+Incremento de um -> ++
+Decremento de um -> --
+Incremento de valor -> +=
+Decremento de valor -> -=
+
+OPERADORES LÓGICOS:
+E -> && ou AND
+Ou -> || ou OR
+
+OPERADORES DE COMPARAÇÃO:
+igualdade -> ==
+Diferença -> !=
+Maior que -> >
+Menor que -> <
+Maior ou Igual -> >=
+Menor ou igual -> <=
      
