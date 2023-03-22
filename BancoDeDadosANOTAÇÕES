@@ -68,3 +68,18 @@ describe contatos;
 
 -- selecionar tudo da tabela
 select * from contatos;
+
+-- criar modelo MySQL 
+database
+	reverse engineer
+		selecionar onde quer fazer o modelo
+			salvar como pdf (export PDF)
+			
+ECLIPSE:
+help
+	eclipeMarketplace
+		pesquisar "window builder"
+			instalar o primeiro que aparecer
+			
+
+	
