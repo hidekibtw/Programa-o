@@ -81,5 +81,23 @@ help
 		pesquisar "window builder"
 			instalar o primeiro que aparecer
 			
+UX = USER EXPERIENCE (O MAIS IMPORTANTE)
+UI = USER INTERFACE
 
-	
+Desenvolvimento da interface gráfica:
+Dicas:
+<ctrl><shift><f> alinhamento do código
+Métodos no java: (código que pode ser reutilizado)
+para criar um método (função) simples usamos a palavra void, seguido do nome do método:
+Exemplo: private void limparCampos() {}
+
+Backup / Restore (Projeto Java - Eclipse)
+Back-Up:
+1 - Pasta Workspace
+2 - Copiar a pasta inteira do projeto 
+
+Restore:
+1 - Copiar a pasta do projeto para o workspace
+2 - No eclipse:
+	File -> Import -> General -> Expandir pasta General -> Exisiting Projects into Workspace -> Select root directory [browse] -> selecionar o workspace -> selecionar projeto a ser importado
+	  
