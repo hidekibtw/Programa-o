@@ -55,3 +55,21 @@ Menor que -> <
 Maior ou Igual -> >=
 Menor ou igual -> <=
      
+ESTRUTURA TERNÁRIA
+teste ? verdadeiro : falso
+int x = 10;
+x == 11 ? "oi" : "tchau"
+
+else -> senão
+else if -> senão isso, aquilo                     sempre que tiver if = tem teste
+
+estrutura switch -> alternativa pro if
+estruturas de repetição -> for, while, do while -> repetem as coisas por algum tempo que voce determina
+while -> mais lento, continua ate chegar no final
+for -> mais rapido, mas precisa saber onde termina e nao faz leitura de arquivos
+do while -> pode substituir o while, é mais rapido mas precisa de pelo menos uma linha de execução
+
+chaves {} só é obrigatório com mais de uma linha de execução
+
+JOptionPane.showMessageDialog(null, "Olá", "Alerta", JOptionPane.WARNING_MESSAGE);
+		JOptionPane.showInputDialog("Digite Algo");     
