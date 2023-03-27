@@ -35,7 +35,7 @@ SERVIDOR:
 Rede Local: Sistemas para comércio de bens e serviços
 Cloud: Sistemas para WEB (E-Commerce)
 
-MYSQL:
+-------MYSQL--------
 mysql -u dba -p
 CTRL + ENTER = EXECUTAR
 -- comentários em linha
@@ -124,6 +124,7 @@ alter table contatos add column fone2 varchar(15) not null after fone;
 -- alterando tipo de dados ou validações
 -- ATENÇÃO aos dados já cadastrados!
 alter table contatos modify fone2 varchar (20);
+
 
 
 ECLIPSE:
