@@ -125,7 +125,11 @@ alter table contatos add column fone2 varchar(15) not null after fone;
 -- ATENÇÃO aos dados já cadastrados!
 alter table contatos modify fone2 varchar (20);
 
+-- Excluir uma coluna
+alter table contatos drop column obs;
 
+-- Excluir a tabela
+drop table contatos;
 
 ECLIPSE:
 help
