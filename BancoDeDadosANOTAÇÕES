@@ -36,6 +36,7 @@ Rede Local: Sistemas para comércio de bens e serviços
 Cloud: Sistemas para WEB (E-Commerce)
 
 MYSQL:
+mysql -u dba -p
 CTRL + ENTER = EXECUTAR
 -- comentários em linha
 show databases;
@@ -74,7 +75,57 @@ database
 	reverse engineer
 		selecionar onde quer fazer o modelo
 			salvar como pdf (export PDF)
-			
+
+-- CRUD Create
+insert into contatos (nome,fone,email) values ('Sander Hideki','11945314964','hideki@gmail.com');
+insert into contatos (nome,fone) values ('Albert Hidekas','11940028921');
+
+-- simulando um erro
+insert into contatos(nome,email) values ('Robson Vaamonde','vava@linuxmint.com');
+
+-- CRUD Read
+-- selecionar tudo na tabela
+select * from contatos;
+
+-- selecionar e ordenar
+select * from contatos order by nome;
+select * from contatos order by nome desc;
+
+-- pesquisas avançadas
+select nome from contatos;
+select nome,email from contatos;
+select * from contatos where nome like 'al%';
+select * from contatos where nome = 'Albert Hidekas';
+select * from contatos where id = 1;
+
+-- relatório personalizados com apelidos para os campos
+select nome as Contato, fone as Telefone, email as E_mail from contatos order by nome;
+
+-- CRUD Update
+-- CUIDADO !!! (Sempre usar a cláusula where junto com a chave primária)
+update contatos set fone = '11995245699' where id = 2;
+update contatos set fone = '11988752514' where nome = 'Cleitin Madagascar'; (NÃO FUNCIONA NO WORKBECH POR CONTA DE TALVEZ TER NOME REPETIDO)
+update contatos set fone = '11988752514' ,email = 'milagresansan@msn.com' where id = 8;
+update contatos set nome = 'Bleison Gracias', fone = '11 949531492', email = 'Graciasmanito@hotmail.com' where id = 4;
+update contatos set email = 'MadagascarCleitun@msn.com' where id = 11;
+update contatos set fone = '11964625122' where id = 3;
+
+-- CRUD Delete
+-- CUIDADO !!! (Sempre usar a cláusula where junto com a chave primária)
+delete from contatos where id = 3;
+
+-- Alterações na estrutura da tabela
+-- adicionar uma coluna a tabela
+alter table contatos add column obs varchar (100);
+
+-- adicionar uma coluna após um local específico
+alter table contatos add column fone2 varchar(15) not null after fone;
+
+-- alterando tipo de dados ou validações
+-- ATENÇÃO aos dados já cadastrados!
+alter table contatos modify fone2 varchar (20);
+
+
 ECLIPSE:
 help
 	eclipeMarketplace
@@ -100,4 +151,13 @@ Restore:
 1 - Copiar a pasta do projeto para o workspace
 2 - No eclipse:
 	File -> Import -> General -> Expandir pasta General -> Exisiting Projects into Workspace -> Select root directory [browse] -> selecionar o workspace -> selecionar projeto a ser importado
-	  
+
+CRUD: Create, Read, Update, Delete (são as quatro operações básicas que podem ser realizadas em banco de dados que usam o modelo relacional.)
+
+CREATE (inserção do registro(dados) na tabela)
+READ (pesquisa dos dados na(s) tabela(s))
+UPDATE (alteração de algum registro da tabela)
+DELETE (exclusão de um registro da tabela)
+
+
+
