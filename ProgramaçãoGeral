@@ -61,15 +61,121 @@ int x = 10;
 x == 11 ? "oi" : "tchau"
 
 else -> senão
-else if -> senão isso, aquilo                     sempre que tiver if = tem teste
+
+else if -> senão isso, aquilo                    
+
+sempre que tiver if = tem teste
 
 estrutura switch -> alternativa pro if
+
 estruturas de repetição -> for, while, do while -> repetem as coisas por algum tempo que voce determina
+
 while -> mais lento, continua ate chegar no final
+
 for -> mais rapido, mas precisa saber onde termina e nao faz leitura de arquivos
+
 do while -> pode substituir o while, é mais rapido mas precisa de pelo menos uma linha de execução
 
 chaves {} só é obrigatório com mais de uma linha de execução
 
 JOptionPane.showMessageDialog(null, "Olá", "Alerta", JOptionPane.WARNING_MESSAGE);
-		JOptionPane.showInputDialog("Digite Algo");     
+		JOptionPane.showInputDialog("Digite Algo"); 
+
+Estruturas Básicas:
+
+- If ... else if ... else:
+
+if ( idade < 18 ) 
+	System.out.println("Menores não poderão ser cadastrados")
+else
+	System.out.println("Cadastro pode ser realizado")
+CLASSE: 
+if ( valor % 2 == 0 )
+	System.out.println("Esse número é par")
+else
+	System.out.println("Esse número NÃO é par")
+
+
+if( mes == 12 || mes == 1 || mes == 2)
+	System.out.println("Verão");
+else if(mes == 3 || mes == 4 || mes == 5)
+	System.out.println("Outono");
+else if(mes == 6 || mes == 7 || mes == 8)
+	System.out.println("Inverno");
+else if(mes == 9 || mes == 10 || mes == 11)
+	System.out.println("Primavera");
+else
+	System.out.println("Valor não considerado");
+
+- Switch ... case ... default:
+
+int mes = 5;
+ switch(mes){
+         case 1:
+             System.out.println("Janeiro");
+             break;
+         case 2:
+             System.out.println("Fevereiro");
+             break;
+         case 3:
+             System.out.println("Março");
+             break;
+         case 4:
+             System.out.println("Abril");
+             break;
+         default:
+             System.out.println("Digite SOMENTE números entre 1 e 4");
+             break;
+}
+
+- for ...e foreach(for):
+TABUADA
+For ( int i = 1 ; i <= 10 ; i++){
+	System.out.println( valor + " x " + i + " = " + (valor * i));
+}
+
+
+For ( int i = 1 ; i <= 10 ; i++){
+	if( i % 2 == 0 ){
+		System.out.println( i ));
+	}
+}
+
+
+- while ...:
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+ 
+public class Ler{
+    public static void main(String[] args) throws IOException{
+        String arquivo = "texto.txt";
+            FileReader in = new FileReader(arquivo);
+            StringBuilder conteudo = new StringBuilder();
+            char[] buffer = new char[4096];
+            int read = 0;
+        do {
+            conteudo.append(buffer, 0, read);
+            read = in.read(buffer);
+        } while (read >= 0);
+        in.close();
+        System.out.println(conteudo.toString());
+    }
+}
+
+- array(vetor e matriz):
+
+int[] valores = {15,26,31,5,20}
+System.out.println(valor[2]);
+
+
+String[][] dados = {
+			{"Id","Produto","Preço"},
+			{"45","Calça","R$ 110.00"},
+			{"14","Blusa","R$ 23,50"}
+		}
+	System.out.println(dados[0][2])
+- metodos.
+
+
