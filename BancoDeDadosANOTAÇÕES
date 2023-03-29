@@ -226,7 +226,7 @@ System.out.println(e);
 
 Selecione JFrame -> adicionar evento -> window -> window activate
 
-
+Design -> Propriedades -> selecionar icone dbon/dboff -> converte local to field
 
 
 	
