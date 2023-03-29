@@ -132,7 +132,11 @@ alter table contatos drop column obs;
 drop table contatos;
 
 ECLIPSE:
-CTRL + SHI
+CTRL + SHIFT + O = IMPORTAR / IMPORTAÇÃO
+CTRL + SHIFT + F = ALINHAMENTO DO CÓDIGO
+ALT + SHIFT + Y = QUEBRA DE LINHA
+try + CTRL + ESPAÇO -> (try - catch)
+
 help
 	eclipeMarketplace
 		pesquisar "window builder"
@@ -168,9 +172,10 @@ DELETE (exclusão de um registro da tabela)
 API (conjunto de ferramentas) = Disponibilizar recursos (juntar recursos) 
 
 JAVA JDBC(Java DataBase Connectivity):
+4 CLASSES:
 - PreparedStatement
-- DriverManager
-- Connection
+- DriverManager (USADO APENAS UMA VEZ)
+- Connection (USADO O TEMPO TODO): Abre e fecha a conexão
 - ResultSet
 
 BAIXAR DRIVER DO BANCO DE DADOS:
@@ -202,3 +207,26 @@ System.out.println(e);
 return null;
     }
 }
+
+// Método responsável por exibir o status da conexão
+	
+private void status(){
+try {
+//abrir a conexão
+con = dao.conectar();
+if(con == null) {
+System.out.println("Erro de conexão");
+} else {
+System.out.println("Banco conectado");
+}
+} catch (Exception e) {
+System.out.println(e);
+}		
+}	
+
+Selecione JFrame -> adicionar evento -> window -> window activate
+
+
+
+
+	
