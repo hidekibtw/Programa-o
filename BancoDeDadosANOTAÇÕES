@@ -211,17 +211,22 @@ return null;
 // Método responsável por exibir o status da conexão
 	
 private void status(){
-try {
-//abrir a conexão
-con = dao.conectar();
-if(con == null) {
-System.out.println("Erro de conexão");
-} else {
-System.out.println("Banco conectado");
-}
-} catch (Exception e) {
-System.out.println(e);
-}		
+	try {
+		//abrir a conexão
+		con = dao.conectar();
+		if(con == null) {
+			System.out.println("Erro de conexão");
+			lblStatus.setIcon(new ImageIcon(Agenda.class.getResource("/img/dboff.png")));
+		} else {
+			System.out.println("Banco conectado");
+			lblStatus.setIcon(new ImageIcon(Agenda.class.getResource("/img/dbon.png")));
+		}
+		//NUNCA esquecer de fechar a conexão
+		con.close();
+	} catch (Exception e) {
+		System.out.println(e);
+	}
+		
 }	
 
 Selecione JFrame -> adicionar evento -> window -> window activate
