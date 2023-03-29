@@ -164,5 +164,19 @@ READ (pesquisa dos dados na(s) tabela(s))
 UPDATE (alteração de algum registro da tabela)
 DELETE (exclusão de um registro da tabela)
 
+API (conjunto de ferramentas) = Disponibilizar recursos (juntar recursos) 
 
+JAVA JDBC(Java DataBase Connectivity):
+- PreparedStatement
+- DriverManager
+- Connection
+- ResultSet
+
+SITE MYSQL -> DOWNLOAD
+MySQL Community Downloads:
+Conecctor/J (importante ser da mesma versão do WorkBench)
+BAIXAR PARA PLATAFORMA INDEPENDENTE EM ZIP e extrair esse ZIP em qualquer local
+No ECLIPSE criar um FOLDER no Projeto AGENDA DE CONTATOS com o nome "lib"
+Depois abrir a pasta do ZIP "mysql-connector" e arrastar o mysql-connector para a pasta lib dentro do ECLIPSE 
+Clique com o botão direito no "mysql-connector" que esta dentro da pasta lib e selecione o Build Path -> Add Build Path
 
