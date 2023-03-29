@@ -132,6 +132,7 @@ alter table contatos drop column obs;
 drop table contatos;
 
 ECLIPSE:
+CTRL + SHI
 help
 	eclipeMarketplace
 		pesquisar "window builder"
@@ -172,6 +173,7 @@ JAVA JDBC(Java DataBase Connectivity):
 - Connection
 - ResultSet
 
+BAIXAR DRIVER DO BANCO DE DADOS:
 SITE MYSQL -> DOWNLOAD
 MySQL Community Downloads:
 Conecctor/J (importante ser da mesma versão do WorkBench)
@@ -180,3 +182,23 @@ No ECLIPSE criar um FOLDER no Projeto AGENDA DE CONTATOS com o nome "lib"
 Depois abrir a pasta do ZIP "mysql-connector" e arrastar o mysql-connector para a pasta lib dentro do ECLIPSE 
 Clique com o botão direito no "mysql-connector" que esta dentro da pasta lib e selecione o Build Path -> Add Build Path
 
+// Variáveis para configurar o bando de dados
+private String driver = "com.mysql.cj.jdbc.Driver";
+private String url = "jdbc:mysql://10.26.44.226:3306/dbagenda";
+private String user = "root";
+private String password = "123@senac";
+// Criação de um objeto para uso da classe Connection(JDBC)
+private Connection con;	
+
+public Connection conectar() {
+// Tratamento de exceções 
+try {
+// As linhas abaixo abrem a conexão com o banco
+Class.forName(driver)
+con = DriverManager.getConnection(url, user, password);
+return con;
+} catch (Exception e) {
+System.out.println(e);
+return null;
+    }
+}
