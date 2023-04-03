@@ -233,5 +233,16 @@ Selecione JFrame -> adicionar evento -> window -> window activate
 
 Design -> Propriedades -> selecionar icone dbon/dboff -> converte local to field
 
+Design -> Propriedades -> selecionar icone Lupa de Pesquisa -> add event handler -> action -> action performed
 
+// Método para buscar um contato pelo nome
+
+	private void buscar() {
+		//dica - testar o evento primeiro
+		System.out.println("teste do botão buscar");
+	}
+
+//evento clicar no botão
+	buscar();
 	
+
