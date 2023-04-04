@@ -189,6 +189,110 @@ String[][] dados = {
 ARRAY COM 1 LINHA = VETOR ([])
 ARRAY COM MAIS DE UMA LINHA = MATRIZ ([][])
 
+/r = serve para fazer retornar
 /n = como se fosse enter
 println = um embaixo do outro (quebra linha)
 print = fica na mesma linha
+
+FUNÇÃO:
+- A principal característica é a utilização de técnicas que decompõem a
+- Solução de um problema em “blocos” que interagem com um bloco principal. Isso é possível por meio da técnica de refinamentos sucessivos e da modularização dos algoritmos.
+- Você pode inserir funções em seus algoritmos, baste ter bem definido o que qual parte da estrutura de código se pretende modularizar.
+- As ações de função estão hierarquicamente subordinadas a um algoritmo principal. Dentro de uma função, pode haver o chamamento de outras funções
+Há quatro tipos de funções:
+	Função sem retorno e argumentos;       (TAMBÉM CONHECIDA COMO PROCEDIMENTO)
+	Função sem retorno e com argumentos;   (TAMBÉM CONHECIDA COMO PROCEDIMENTO)
+
+
+	Função com retorno e sem argumentos;
+	Função com retorno e com argumentos;
+	
+CARACTERÍSTICAS:
+- As funções quando não possuem retorno, em C#, elas são declaradas como VOID – vazio. 
+- Funções com retorno deve ter o tipo de retorno declarado diferente de VOID.
+- Outro ponto que devemos destacar é que toda função deve possuir um nome e seguido por parênteses. Esses, por sua vez, podem conter algo ou não.
+- Os elementos presentes nos parênteses são chamados de ARGUMENTOS. Muitas pessoas chamam de parâmetros. 
+- Para que uma função faça as suas execuções é necessário “chama-la”, ou seja, escrever o nome da função no momento em que for utilizá-la.
+- VOID - SAIDA ESPECIFICADA
+EXEMPLOS:
+Função SEM RETORNO E SEM ARGUMENTOS:
+
+void mensagem(){
+Console.WriteLine(“Olá! Seja bem vindo!”);
+}
+
+Função SEM RETORNO E COM ARGUMENTOS:
+
+void mensagem(String nome){
+Console.WriteLine(“Olá, Sr(a): “ + nome + “! Seja bem vindo!”);
+}
+
+Função COM RETORNO E SEM ARGUMENTOS:
+Double valorPI(){
+	return 3.1415
+}
+
+Função COM RETORNO E COM ARGUMENTOS:
+
+Int areaDoRetangulo(int largura, int altura){
+	int resultado;
+	resultado  = largura * altura;
+	return resultado
+}
+
+TRY CATCH:
+A instrução try-catch consiste em um bloco try seguido por uma ou mais
+cláusulas catch, que especificam os manipuladores para diferentes exceções.
+
+O bloco try contém o código protegido que pode causar a exceção.
+O bloco é executado até que uma exceção seja lançada ou ele seja
+concluído com êxito. 
+
+try{
+    //comandos
+}
+catch{
+    //comandos
+}
+
+EXEMPLO TRY CATCH:
+Conversão de tipos, Divisão por Zero, Escrita em arquivos. 
+
+object o2 = null;  
+
+try  
+{  
+    int i2 = (int)o2;   // Error  
+}
+catch (FileNotFoundException e){ 
+	//comandos 
+} 
+catch (IOException e) {
+	//comandos 
+} 
+
+EXEMPLO TRY CATCH - FINALLY:
+Conversão de tipos, Divisão por Zero, Escrita em arquivos. 
+
+object o2 = null;  
+
+try  
+{  
+	StreamWriter sw = new StreamWriter(“Arquivo.txt”)
+	sw.close(); (TEM QUE USAR ESSE COMANDO PARA FECHAR NO FINALLY)
+	sw.WriteLine(“teste”);
+}
+catch (Exception ex){ 
+	//comandos 
+} 
+finally{
+	//comandos (ex: sw.close();)
+} 
+
+
+
+
+
+
+
+
