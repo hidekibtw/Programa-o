@@ -131,6 +131,9 @@ alter table contatos drop column obs;
 -- Excluir a tabela
 drop table contatos;
 
+-- uso do md5() para criptografar uma senha
+insert into usuarios (nome,login,senha) values ('Sander Hideki','hidekibtw', md5('123@senac'));
+
 ECLIPSE:
 CTRL + SHIFT + O = IMPORTAR / IMPORTAÇÃO
 CTRL + SHIFT + F = ALINHAMENTO DO CÓDIGO
@@ -247,4 +250,88 @@ Design -> Propriedades -> selecionar icone Lupa de Pesquisa -> add event handler
 //evento clicar no botão
 	buscar();
 	
+POO: 
+- abstração
+- Herança
+- Polimorfismo
+- Encapsulamento
 
+ABSTRAÇÃO: A abstração é usada para definir um modelo para a criação dos objetos. Na linguagem Java usamos uma classe para criar um modelo.
+	
+	Classe Modelo: Para explicar uma classe modelo vamos fazer uma analogia com a patente da Lego que descreve as características de um bloco além de mostrar que é possivel encaixar um bloco no outro. Este modelo será usado para criar os objetos(blocos).
+	Objetos: Objetos são criados à partir da classe modelo. Percebam na imagem que temos blocos de diferentes cores e tamanhos, porém todos foram criados a partir de um modelo.
+	
+EX MODELO: 
+public class Bloco {
+ //atributos
+	int resistencia;
+	String textura;
+
+//Construtor (iniciar um código para cada objeto)
+//O constutor precisa ter o mesmo nome da classe
+	public Bloco() {
+		System.out.println(""); //pular uma linha
+		System.out.println(" ___");
+		System.out.println("|   |");
+		System.out.println("|___|");
+	}
+	
+ //métodos
+ //void -> métodos simples (executar uma ação)
+	void construir() {
+		System.out.println("Bloco colocado");
+	}
+	
+	void minerar() {
+		System.out.println("Recursos obtidos");
+	}
+	
+	void craftar () {
+		System.out.println("Item criado");
+	}
+	
+}
+
+EX OBJETO:
+//instanciar(criar) um objeto
+		Bloco blocoTerra = new Bloco();
+		blocoTerra.resistencia = 1;
+		blocoTerra.textura = "Terra";
+		System.out.println("Bloco " + blocoTerra.textura);
+		System.out.println("Resistência: " + blocoTerra.resistencia);
+		blocoTerra.construir();
+		blocoTerra.minerar();	
+		
+		Bloco blocoMadeira = new Bloco();
+		blocoMadeira.resistencia = 2;
+		blocoMadeira.textura = "Madeira";
+		System.out.println("Bloco " + blocoMadeira.textura);
+		System.out.println("Resistência: " + blocoMadeira.resistencia);
+		blocoMadeira.minerar();
+		blocoMadeira.craftar();
+	}
+
+}
+
+
+OBS (CRIAR UM CHASSI ALEATÓRIO):
+	System.out.println("_______________________");
+	// a linha abaixo cria um objeto da nome chassi
+	// chassi também é uma variável que recebe caracteres dentro de ()
+	String chassi = new String("1821O213218RAS84HRSJA84");
+	// a linha abaixo cria um objeto de nome gerador
+	// random é usado para gerar números aleatórios
+	Random gerador = new Random();
+	System.out.print("Chassi: * ");
+	// o laço abaixo imprime aleatóriamente 16 números da String
+	for (int i = 1; i < 16; i++) {
+		char numeracao = (char) gerador.nextInt(chassi.length());
+		System.out.print(chassi.charAt(numeracao));
+	}
+	System.out.println(" *");
+
+
+DICA: 
+objeto (substantivo)
+atributo (adjetivo)
+método (verbo)
