@@ -87,6 +87,8 @@ string = texto / nomes.
 JOptionPane.showMessageDialog(null, "Olá", "Alerta", JOptionPane.WARNING_MESSAGE);
 		JOptionPane.showInputDialog("Digite Algo"); 
 
+.equals() = IGUAL ALGO QUE ESTA DENTRO DO PARENTESES
+
 Estruturas Básicas:
 
 - If ... else if ... else:
