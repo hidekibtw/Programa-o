@@ -337,4 +337,19 @@ atributo (adjetivo)
 método (verbo)
 
 
-MONTAGEM PC GAMER
+HERANÇA:
+Na herança criamos uma subclasse da classe modelo estendendo seus atribuitos e métodos com o objeto de criar outros tipos de objetos reutilizando atribuitos métodis da classe modelo.
+
+EX: 
+	Bloco:                        Enxada:
+	resistencia: int	      conquista: boolean
+	textura: String               arar(): void
+	Construir(): void
+	minerar(): void
+	craftar(): void
+
+boolean : (variável - true / false
+
+Criar construtor personalizado: 
+Botão direito -> source -> Generate Constructor using Fields -> Generate
+s
