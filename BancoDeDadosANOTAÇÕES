@@ -352,4 +352,22 @@ boolean : (variável - true / false
 
 Criar construtor personalizado: 
 Botão direito -> source -> Generate Constructor using Fields -> Generate
-s
+
+
+//PlainDocument -> recursos para formatação
+public class Validador extends PlainDocument {
+	// variável que irá armazenar o número máximo de caracteres permitidos
+	private int limite;
+	// construtor personalizado -> será usado pela caixas de texto JTextFiled
+
+	public Validador(int limite) {
+		super();
+		this.limite = limite;
+	}
+	// Método interno para validar o limite de caracteres
+	// BadLocation -> Tratamento de exceções 
+	public void inserirString(int ofs, String str, AttributeSet a) throws BadLocationException {
+		(OBS:Importar o Swing quando for importar)
+	}
+	
+}
