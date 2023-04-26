@@ -371,3 +371,5 @@ public class Validador extends PlainDocument {
 	}
 	
 }
+
+botao direito -> adicionar evento -> Key -> KeyTyped  (APENAS ACEITA RESPOSTA EM NÚMERO, NÃO ACEITA LETRA)
